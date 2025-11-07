@@ -2,6 +2,7 @@
   "expo": {
     "name": "HandwriteMarketplace",
     "slug": "HandwriteMarketplace",
+    "scheme": "handwritemarketplace",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +21,36 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.xacyou.HandwriteMarketplace",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "com.xacyou.HandwriteMarketplace"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to let you add images to your portfolio.",
+          "cameraPermission": "The app needs access to your camera to let you take a new photo for your portfolio."
+        }
+      ]
+    ]
   }
 }
