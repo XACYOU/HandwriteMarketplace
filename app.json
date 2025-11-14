@@ -23,7 +23,6 @@
       },
       "edgeToEdgeEnabled": true,
       "permissions": [
-        "android.permission.RECORD_AUDIO",
         "android.permission.RECORD_AUDIO"
       ],
       "package": "com.xacyou.HandwriteMarketplace",
@@ -36,7 +35,10 @@
               "scheme": "com.xacyou.HandwriteMarketplace"
             }
           ],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ]
     },
@@ -51,6 +53,11 @@
           "cameraPermission": "The app needs access to your camera to let you take a new photo for your portfolio."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b5cfb86a-f4ba-4297-a03c-d6020f6b6392"
+      }
+    }
   }
 }
